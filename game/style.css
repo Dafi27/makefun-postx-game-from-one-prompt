@@ -1,0 +1,91 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #0b1026;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: #f5f7fa;
+}
+
+#game {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+#hud {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  pointer-events: none;
+  z-index: 5;
+}
+
+#score {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.7);
+}
+
+#hint {
+  font-size: 18px;
+  opacity: 0.75;
+  margin-top: 4px;
+}
+
+#overlay, #gameover {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(11, 16, 38, 0.55);
+  z-index: 10;
+}
+
+#overlay h1, #gameover h1 {
+  font-size: 84px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  color: #fff;
+  text-shadow: 0 0 34px rgba(196, 28, 131, 0.85);
+}
+
+#overlay p, #gameover p {
+  font-size: 24px;
+  margin-top: 14px;
+  opacity: 0.9;
+}
+
+#overlay .keys, #gameover .keys {
+  font-size: 20px;
+  line-height: 1.7;
+  opacity: 0.75;
+}
+
+#startBtn {
+  margin-top: 34px;
+  padding: 18px 54px;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #fff;
+  background: #c41c83;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(196, 28, 131, 0.6);
+}
+
+#startBtn:hover { background: #d92a94; }
+
+.hidden { display: none !important; }

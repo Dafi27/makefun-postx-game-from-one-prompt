@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meteor Dodge — built from one prompt</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="game"></canvas>
+<div id="hud">
+  <div id="score">0.0s</div>
+  <div id="hint">Arrows / WASD to fly &middot; dodge the meteors</div>
+</div>
+<div id="overlay">
+  <h1>METEOR DODGE</h1>
+  <p>One prompt. One rocket. No mercy.</p>
+  <p class="keys">Move with &larr; &uarr; &darr; &rarr; or WASD<br>Survive as long as you can</p>
+  <button id="startBtn">LAUNCH</button>
+</div>
+<div id="gameover" class="hidden">
+  <h1>GAME OVER</h1>
+  <p>You survived <span id="finalScore">0.0</span> seconds</p>
+  <p class="keys">Press R or tap to fly again</p>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
